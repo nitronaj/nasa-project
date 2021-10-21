@@ -4,10 +4,11 @@
   "description": "NASA Mission Control API",
   "main": "src/server.js",
   "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
     "watch": "nodemon src/server.js",
     "start": "node src/server.js",
-    "test": "jest",
-    "test:watch": "jest --watch"
+    "cluster": "pm2 start src/server.js -i max"
   },
   "author": "",
   "license": "ISC",
@@ -15,7 +16,9 @@
     "cors": "^2.8.5",
     "csv-parse": "^4.16.3",
     "express": "^4.17.1",
-    "morgan": "^1.10.0"
+    "mongoose": "^6.0.11",
+    "morgan": "^1.10.0",
+    "pm2": "^5.1.2"
   },
   "devDependencies": {
     "jest": "^27.2.5",
