@@ -47,6 +47,7 @@ const Launch = (props) => {
           min={today}
           max="2040-12-31"
           defaultValue={today}
+          pattern="\d{4}-\d{2}-\d{2}"
         />
         <label htmlFor="mission-name">Mission Name</label>
         <input type="text" id="mission-name" name="mission-name" />

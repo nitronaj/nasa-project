@@ -12,6 +12,9 @@
   },
   "author": "",
   "license": "ISC",
+  "jest": {
+    "testEnvironment": "node"
+  },
   "dependencies": {
     "cors": "^2.8.5",
     "csv-parse": "^4.16.3",
@@ -21,6 +24,7 @@
     "pm2": "^5.1.2"
   },
   "devDependencies": {
+    "eslint": "^8.1.0",
     "jest": "^27.2.5",
     "nodemon": "^2.0.13",
     "supertest": "^6.1.6"
