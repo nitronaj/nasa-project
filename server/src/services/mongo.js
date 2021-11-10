@@ -4,7 +4,7 @@ const MONGO_URL =
   'mongodb+srv://nasa-api:FQP9NnBO51WFTK53@nasacluster.5dwnc.mongodb.net/nasa?retryWrites=true&w=majority';
 
 mongoose.connection.once('open', () => {
-  console.log('MongoDb connection read!');
+  console.log('MongoDb connection ready!');
 });
 
 mongoose.connection.on('error', (err) => {
