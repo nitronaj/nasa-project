@@ -46,7 +46,7 @@ async function populateLaunches() {
       flightNumber: launchDoc.flight_number,
       mission: launchDoc.name,
       rocket: launchDoc.rocket.name,
-      launchDate: launchDoc.data_local,
+      launchDate: launchDoc.date_local,
       upcoming: launchDoc.upcoming,
       success: launchDoc.success,
       customers,
